@@ -8,6 +8,8 @@ do {//Выводим первый вопрос
     }
     else {
         ok = isAnswer(works.a0, event);
+        answers.a01 = event;
+        console.log(answers);
     }
 } while (!ok);
 switch (event) {
@@ -20,6 +22,8 @@ switch (event) {
             }
             else {
                 ok = isAnswer(works.b0, event);
+                answers.a02 = event;
+                console.log(answers);
             }
         } while (!ok);
         switch (event) {
@@ -32,6 +36,8 @@ switch (event) {
                     }
                     else {
                         ok = isAnswer(works.d0, event);
+                        answers.a03 = event;
+                        console.log(answers);
                     }
                 } while (!ok);
 
@@ -45,6 +51,8 @@ switch (event) {
                     }
                     else {
                         ok = isAnswer(works.d0, event);
+                        answers.a04 = event;
+                        console.log(answers);
                     }
                 } while (!ok);
 
@@ -64,6 +72,8 @@ switch (event) {
             }
             else {
                 ok = isAnswer(works.c0, event);
+                answers.a05 = event;
+                console.log(answers);
             }
         } while (!ok);
         switch (event) {
@@ -76,6 +86,8 @@ switch (event) {
                     }
                     else {
                         ok = isAnswer(works.d0, event);
+                        answers.a06 = event;
+                        console.log(answers);
                     }
                 } while (!ok);
 
@@ -89,6 +101,8 @@ switch (event) {
                     }
                     else {
                         ok = isAnswer(works.d0, event);
+                        answers.a07 = event;
+                        console.log(answers);
                     }
                 } while (!ok);
 
@@ -105,6 +119,23 @@ switch (event) {
         alert('Ошибка');
 }
 alert('Спасибо за игру');
+var ans = +prompt('Enter the window');
+
+if (Number.isInteger(ans)){
+    switch (ans) {
+        case 1:
+            alert("Answer number was:" + answers.a01);
+            break;
+
+        case 2:
+            alert("Answer number was:" + answers.a02);
+            break;
+
+        case 3:
+            alert("Answer number was:" + answers.a03);
+            break;
+    }
+}
 
 //------------------------------------------
 function isAnswer(q, event) {
