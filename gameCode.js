@@ -137,6 +137,7 @@ if (Number.isInteger(ans)){
     }
 }
 
+
 //------------------------------------------
 function isAnswer(q, event) {
     if (isNaN(event) || !isFinite(event)) {
