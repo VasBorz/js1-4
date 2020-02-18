@@ -15,16 +15,9 @@ var obj = {
             }else{
                 let digits = (""+number).split("");
 
-                switch (true) {
-                    case (digits.length >= 1):
-                        this.units = digits[0];
-
-                    case (digits.length >= 2):
-                        this.dozens = digits[1];
-
-                    case (digits.length >= 3):
-                        this.hundreds = digits[2];
-                }
+                if(digits.length >= 1 ) this.units = digits[0];
+                if(digits.length >= 2 ) this.dozens = digits[1];
+                if(digits.length >= 3 ) this.hundreds = digits[2];
                 console.log(this);
             }
         }else{
